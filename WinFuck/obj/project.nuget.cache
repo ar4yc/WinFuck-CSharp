@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "OA/v7rAD9ek=",
+  "success": true,
+  "projectFilePath": "C:\\Intel\\NT\\projects\\WinFuck\\WinFuck\\WinFuck.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.dotnet.ilcompiler\\10.0.9\\microsoft.dotnet.ilcompiler.10.0.9.nupkg.sha512",
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.net.illink.tasks\\10.0.9\\microsoft.net.illink.tasks.10.0.9.nupkg.sha512",
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\10.0.9\\runtime.win-x64.microsoft.dotnet.ilcompiler.10.0.9.nupkg.sha512",
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\runtime.win-x64.microsoft.dotnet.ilcompiler\\10.0.9\\runtime.win-x64.microsoft.dotnet.ilcompiler.10.0.9.nupkg.sha512",
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\10.0.9\\microsoft.aspnetcore.app.runtime.win-x64.10.0.9.nupkg.sha512",
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\10.0.9\\microsoft.windowsdesktop.app.runtime.win-x64.10.0.9.nupkg.sha512",
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\10.0.9\\microsoft.netcore.app.runtime.win-x64.10.0.9.nupkg.sha512",
+    "C:\\Users\\Дмитрий\\.nuget\\packages\\microsoft.netcore.app.runtime.nativeaot.win-x64\\10.0.9\\microsoft.netcore.app.runtime.nativeaot.win-x64.10.0.9.nupkg.sha512"
+  ],
+  "logs": []
+}
