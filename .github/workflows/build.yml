@@ -29,4 +29,4 @@ jobs:
       run: dotnet restore WinFuck.slnx
 
     - name: Publish project
-      run: dotnet publish WinFuck.slnx -c Release -r win-x64 --self-contained true
+      run: dotnet publish WinFuck.slnx -c Release -r win-x64 --self-contained true -p:PublishAot=false
