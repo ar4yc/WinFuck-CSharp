@@ -113,9 +113,8 @@ class WinFuck
 
         }
         catch { }
-        }
     }
-
+    
     public static void ETWBypass() {
         [DllImport("kernel32.dll")]
         static extern IntPtr GetProcAddress(IntPtr hModule, string lpProcName);
