@@ -30,3 +30,21 @@ jobs:
 
     - name: Publish project
       run: dotnet publish WinFuck/WinFuck.csproj -c Release -r win-x64 --self-contained true
+
+    - name: Upload to GitHub Release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        $EXE_PATH = "WinFuck/bin/Release/net10.0-windows/win-x64/publish/WinFuck.exe"
+        
+        # Проверяем, существует ли уже релиз с тегом 1.0.0
+        $RELEASE_EXISTS = gh release view 1.0.0 --repo "${{ github.repository }}" 2>$null
+        
+        if ($RELEASE_EXISTS) {
+          echo "Релиз 1.0.0 уже существует. Перезаписываем исполняемый файл..."
+          gh release upload 1.0.0 "$EXE_PATH" --clobber --repo "${{ github.repository }}"
+        } else {
+          echo "Создаем новый релиз 1.0.0..."
+          gh release create 1.0.0 "$EXE_PATH" --title "Release 1.0.0" --notes "Автоматическая сборка проекта" --repo "${{ github.repository }}"
+        }
+      shell: powershell
