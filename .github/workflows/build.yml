@@ -35,7 +35,7 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
-        $EXE_PATH = "WinFuck/bin/Release/net10.0-windows/win-x64/WinFuck.exe"
+        $EXE_PATH = " D:\a\WinFuck-CSharp\WinFuck-CSharp\WinFuck\bin\x64\Release\net10.0-windows\win-x64\publish\WinFuck.exe"
         $ErrorActionPreference = "SilentlyContinue"
         
         gh release view 1.0.0 --repo "${{ github.repository }}"
